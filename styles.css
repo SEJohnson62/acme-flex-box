@@ -31,22 +31,71 @@ body {
   height: 50px;
 }
 
-#form {
+#form-section {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-evenly;
-  margin: 0 5% 0 5%;
+  margin: 0 0 0 5%;
   border: 1px;
 }
 
 #form-container {
-  display: flex;
   width: 60%;
-  padding: 15px;
+  padding-top: 0px;
+  padding-left: 10px;
   border: black;
   border-width: 1px;
   border-style: solid;
   border-radius: 6px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
+}
+
+#create-user {
+  width: 100%;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+#form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  flex-direction: column;
+  margin: 12px;
+}
+
+.form-item-pair {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 10px;
+  width: 100%;
+}
+
+input,
+textarea {
+  min-width: 100%;
+  margin-right: 0px;
+}
+
+label {
+  margin-right: 50px;
+  width: 15rem;
+}
+
+#selector {
+  margin: 10px;
+}
+
+#button-span {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#submit {
+  background-color: rgb(72, 152, 236);
+  color: white;
 }

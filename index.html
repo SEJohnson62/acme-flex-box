@@ -18,13 +18,41 @@
     <span id="user-header">
       <h2>Users</h2>
     </span>
-    <section id="form">
+    <section id="form-section">
       <div id="form-container">
-          <span id="create-user">
-              <h2>Create a User</h2>
+        <span id="create-user">
+          <h2>Create a User</h2>
+        </span>
+        <form id="form">
+          <div class="form-item-pair">
+            <div>
+              <label for="name">First Name</label>
+            </div>
+            <div>
+              <input class="input-box" type="text" name="first-name" />
+            </div>
+          </div>
+          <div class="form-item-pair">
+            <div>
+              <label for="name">Last Name</label>
+            </div>
+            <div>
+              <input class="input-box" type="text" name="last-name" />
+            </div>
+          </div>
+          <div>
+            <select name="department-list" form="form" id="selector">
+              <option value="management">Management</option>
+              <option value="development">Development</option>
+              <option value="sales">Sales</option>
+              <option value="hr">HR</option>
+            </select>
+          </div>
+          <span id="button-span">
+            <button type="clear id="clear">Clear</button>
+            <button type="submit" id="submit">Submit</button>
           </span>
-              
-          </span>
+        </form>
       </div>
     </section>
   </body>
