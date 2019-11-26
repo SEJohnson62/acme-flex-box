@@ -35,7 +35,6 @@ body {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-evenly;
-  margin: 0 0 0 5%;
   border: 1px;
 }
 
@@ -75,11 +74,12 @@ body {
 
 input,
 textarea {
-  min-width: 100%;
+  width: 100%;
   margin-right: 0px;
 }
 
 label {
+  font-weight: bold;
   margin-right: 50px;
   width: 15rem;
 }
