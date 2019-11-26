@@ -25,24 +25,25 @@
         </span>
         <form id="form">
           <div class="form-item-pair">
-            <div>
+            <div class="form-label">
               <label for="name">First Name</label>
             </div>
-            <div>
+            <div class="form-right">
               <input type="text" name="first-name" />
             </div>
           </div>
           <div class="form-item-pair">
-            <div>
+            <div class="form-label">
               <label for="name">Last Name</label>
             </div>
-            <div>
+            <div class="form-right">
               <input type="text" name="last-name" />
             </div>
           </div>
-          <div>
+          <div id="dept-selector">
+            <label class="form-label" for="selector">Department</label>
             <select name="department-list" form="form" id="selector">
-                <option value="none">-- none --</option>
+              <option value="none">-- none --</option>
               <option value="management">Management</option>
               <option value="development">Development</option>
               <option value="sales">Sales</option>
@@ -50,7 +51,7 @@
             </select>
           </div>
           <span id="button-span">
-            <button type="clear id="clear">Clear</button>
+            <button type="clear" id="clear">Clear</button>
             <button type="submit" id="submit">Submit</button>
           </span>
         </form>
